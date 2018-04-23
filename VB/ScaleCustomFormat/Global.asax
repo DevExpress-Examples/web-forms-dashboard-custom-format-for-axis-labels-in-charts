@@ -1,0 +1,1 @@
+﻿<%@ Application CodeBehind="Global.asax.vb" Inherits="ScaleCustomFormat.Global" Language="vb" %>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="connection" FromAppConfig="true" />
+      <Query Type="SelectQuery" Name="CustomerReports">
+        <Tables>
+          <Table Name="CustomerReports" X="30" Y="30" Width="125" Height="0" />
+        </Tables>
+        <Columns>
+          <Column Table="CustomerReports" Name="ProductName" />
+          <Column Table="CustomerReports" Name="CompanyName" />
+          <Column Table="CustomerReports" Name="OrderDate" />
+          <Column Table="CustomerReports" Name="ProductAmount" />
+        </Columns>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="CustomerReports">
+            <Field Name="ProductName" Type="String" />
+            <Field Name="CompanyName" Type="String" />
+            <Field Name="OrderDate" Type="DateTime" />
+            <Field Name="ProductAmount" Type="Decimal" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <ConnectionOptions CloseConnection="true" />
+      <CalculatedFields>
+        <CalculatedField Name="Calculated Field 1" Expression="GetYear([OrderDate])" DataType="Auto" DataMember="CustomerReports" />
+      </CalculatedFields>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="1. Chart with the Currency Format (Y Axis)" Group="dashboardItemGroup1" DataSource="dashboardSqlDataSource1" DataMember="CustomerReports">
+      <DataItems>
+        <Measure DataMember="ProductAmount" DefaultId="DataItem0" />
+        <Dimension DataMember="OrderDate" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem2" Name="2. Chart with the Number Format and the Ones Unit (Y Axis)" Group="dashboardItemGroup1" DataSource="dashboardSqlDataSource1" DataMember="CustomerReports">
+      <DataItems>
+        <Measure DataMember="ProductName" SummaryType="Count" DefaultId="DataItem0">
+          <NumericFormat FormatType="Number" Unit="Ones" />
+        </Measure>
+        <Dimension DataMember="OrderDate" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem3" Name="" Group="dashboardItemGroup2" DataSource="dashboardSqlDataSource1" DataMember="CustomerReports">
+      <DataItems>
+        <Measure DataMember="ProductAmount" DefaultId="DataItem0" />
+        <Dimension DataMember="OrderDate" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem4" Name="" Group="dashboardItemGroup2" DataSource="dashboardSqlDataSource1" DataMember="CustomerReports">
+      <DataItems>
+        <Measure DataMember="ProductName" SummaryType="Count" DefaultId="DataItem0">
+          <NumericFormat FormatType="Number" Unit="Ones" />
+        </Measure>
+        <Dimension DataMember="OrderDate" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+  </Items>
+  <Groups>
+    <Group ComponentName="dashboardItemGroup1" Name="Customized Charts" />
+    <Group ComponentName="dashboardItemGroup2" Name="Original Charts" />
+  </Groups>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutGroup Orientation="Vertical" DashboardItem="dashboardItemGroup1" Weight="50">
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="50.119331742243439" />
+        <LayoutItem DashboardItem="chartDashboardItem2" Weight="49.880668257756561" />
+      </LayoutGroup>
+      <LayoutGroup Orientation="Vertical" DashboardItem="dashboardItemGroup2" Weight="50">
+        <LayoutItem DashboardItem="chartDashboardItem3" Weight="50.119331742243439" />
+        <LayoutItem DashboardItem="chartDashboardItem4" Weight="49.880668257756561" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
