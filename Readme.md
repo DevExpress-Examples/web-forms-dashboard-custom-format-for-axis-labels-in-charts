@@ -6,7 +6,9 @@
 * [Global.asax](./CS/ScaleCustomFormat/Global.asax) (VB: [Global.asax](./VB/ScaleCustomFormat/Global.asax))
 * [Global.asax.cs](./CS/ScaleCustomFormat/Global.asax.cs) (VB: [Global.asax.vb](./VB/ScaleCustomFormat/Global.asax.vb))
 <!-- default file list end -->
-# Web Dashboards - How to use a custom format for axis labels in the Chart Item
+
+# Dashboard for Web Forms - How to use a custom format for axis labels in the Chart Item
+
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/t602710/)**
 <!-- run online end -->
@@ -45,9 +47,3 @@ However, you can still use approaches demonstrated in this example if you wish t
         }
  
 ```
-
-
-
-<br/>
-
-
