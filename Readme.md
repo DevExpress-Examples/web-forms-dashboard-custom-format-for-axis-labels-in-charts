@@ -3,14 +3,6 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T602710)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
-
-* [Default.aspx](./CS/ScaleCustomFormat/Default.aspx) (VB: [Default.aspx](./VB/ScaleCustomFormat/Default.aspx))
-* [Default.aspx.cs](./CS/ScaleCustomFormat/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ScaleCustomFormat/Default.aspx.vb))
-* [Global.asax](./CS/ScaleCustomFormat/Global.asax) (VB: [Global.asax](./VB/ScaleCustomFormat/Global.asax))
-* [Global.asax.cs](./CS/ScaleCustomFormat/Global.asax.cs) (VB: [Global.asax.vb](./VB/ScaleCustomFormat/Global.asax.vb))
-<!-- default file list end -->
 
 # Dashboard for Web Forms - How to use a custom format for axis labels in the Chart Item
 
@@ -52,6 +44,13 @@ However, you can still use approaches demonstrated in this example if you wish t
         }
  
 ```
+
+## Files to Review
+
+* [Default.aspx](./CS/ScaleCustomFormat/Default.aspx) (VB: [Default.aspx](./VB/ScaleCustomFormat/Default.aspx))
+* [Default.aspx.cs](./CS/ScaleCustomFormat/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ScaleCustomFormat/Default.aspx.vb))
+* [Global.asax](./CS/ScaleCustomFormat/Global.asax) (VB: [Global.asax](./VB/ScaleCustomFormat/Global.asax))
+* [Global.asax.cs](./CS/ScaleCustomFormat/Global.asax.cs) (VB: [Global.asax.vb](./VB/ScaleCustomFormat/Global.asax.vb))
 
 ## Documentation
 
