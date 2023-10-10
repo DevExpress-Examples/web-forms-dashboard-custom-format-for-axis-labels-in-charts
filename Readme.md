@@ -7,7 +7,7 @@
 # Dashboard for Web Forms - How to use a custom format for axis labels in the Chart Item
 
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t602710/)**
+**[[Run Online]](https://codecentral.devexpress.com/128580503/)**
 <!-- run online end -->
 
 ---
