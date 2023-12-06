@@ -5,13 +5,7 @@
 <!-- default badges end -->
 
 # Dashboard for Web Forms - How to use a custom format for axis labels in the Chart Item
-
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128580503/)**
-<!-- run online end -->
-
 ---
-
 **Update:** Starting with version **18.2**, we introduced the capability to format any Numeric or Date-Time Value. So, you can set formats demonstrated in this example via the Design mode's UI using the X and Y axis formatting settings without writing additional code.  
 However, you can still use approaches demonstrated in this example if you wish to implement your custom formatting not supported by the control.
 
